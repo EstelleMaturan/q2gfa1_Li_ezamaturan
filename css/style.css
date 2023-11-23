@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: #F0E7E9;
+}
+
+nav{
+    display: flex;
+    background-color: #D2798B;
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.links a{
+    margin-left: 1vw;
+}
+
+.icon{
+	background: url(../images/sprite3.png) no-repeat;
+	width: 66px;
+	height: 66px;
+    display: inline-block;
+}
+
+#twt{
+    background-position: -66px -72px;
+}
+
+#ig{
+    background-position: -290px -221px;
+}
+
+#fb{
+    background-position: -439px -146px;
+}
+
+#yt{
+    background-position: -439px -221px;
+}
+
+#bgvid{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.bannerhead{
+    font-size: 40pt;
+    font-weight: 500;
+}
+
+footer{
+    width: 100vw;
+    position: fixed;
+    bottom: 0vw;
+    background-color: #CFAFB8;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        position: relative;
+        background-color: #D2798B;
+    }
+    .pagetitle{
+        background-color: #D18199;
+        padding: 1vw;
+        color: black;
+    }
+    .links{
+        display: none;
+        z-index: 1;
+        position: absolute; 
+        background-color:#CFAFB8;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+        min-width:100vw;
+    }
+    .links a{
+        color: black;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        display: block;
+    }
+
+    .links a:hover{
+        background-color: #F0E7E9; 
+        transition: .5s;
+    }
+
+    nav:hover .links{
+        display: block;
+        transition: .5s;
+    }
+
+    nav:hover .pagetitle {
+        background-color: #ff7aa2;
+        transition: .5s;
+    }
+}
