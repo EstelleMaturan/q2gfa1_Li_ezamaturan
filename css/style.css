@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lora&family=Montserrat&family=Poppins:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,21 +11,70 @@ body{
     justify-content: space-between;
 }
 
-a{
-    text-decoration: none;
-    color: #F0E7E9;
-}
-
 nav{
     display: flex;
-    background-color: #D2798B;
+    background-color: #10002B;
     justify-content: space-around;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+.pagetitle{
+    color: #D2798B;
+    font-size: larger;
+    font-style: italic;
+    font-family: 'Lora', serif;
 }
 
 .links a{
-    margin-left: 1vw;
+    margin-left: 1.5vw;
+}
+
+a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #F0E7E9;
+    font-size: 17px;
+    transition: .8s;
+}
+
+a:hover{
+    text-decoration: underline;
+    transition: .8s;
+}
+
+.banner{
+    margin-top: 7.5vw;
+    background-color: rgba(207, 175, 184, 0.5);
+    padding: 4vw;
+}
+
+.bannerhead{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 36px;
+}
+
+.bannerhead, p{
+    text-align: center;
+    font-weight: bold;
+}
+
+p, ul{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+ul{
+    margin-top: 3vw;
+    padding-left: 4vw;
+}
+
+footer{
+    width: 100vw;
+    position: fixed;
+    bottom: 0vw;
+    background-color: #240046;
+    text-align: center;
 }
 
 .icon{
@@ -57,28 +108,15 @@ nav{
     z-index: -1;
 }
 
-.bannerhead{
-    font-size: 40pt;
-    font-weight: 500;
-}
-
-footer{
-    width: 100vw;
-    position: fixed;
-    bottom: 0vw;
-    background-color: #CFAFB8;
-    text-align: center;
-}
-
 @media screen and (max-width: 600px){
     nav{
         position: relative;
-        background-color: #D2798B;
+        background-color: #240046;
     }
     .pagetitle{
         background-color: #D18199;
         padding: 1vw;
-        color: black;
+        color: white;
     }
     .links{
         display: none;
@@ -90,8 +128,8 @@ footer{
     }
     .links a{
         color: black;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
+        padding-top: 2.5vh;
+        padding-bottom: 2.5vh;
         display: block;
     }
 
